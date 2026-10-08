@@ -200,10 +200,7 @@ Solve Exercise 4 here:
 game.party.push(pokemon[0])
 
 console.log('Exercise 4 Result:')
-for(let onePokemon of game.party){
-  console.log(`- ${onePokemon.name}`)
-}
-
+pokemonNames()
 
 /*
 Exercise 5
@@ -218,9 +215,7 @@ Solve Exercise 5 here:
 game.party.splice(1,0, pokemon[5], pokemon[50], pokemon[100])
 
 console.log('Exercise 5 Result:')
-for(let onePokemon of game.party){
-  console.log(`- ${onePokemon.name}`)
-}
+pokemonNames()
 
 
 /*
@@ -277,9 +272,7 @@ for(i = 0; i < game.party.length; i++){
     }
 }  
 console.log('Exercise 7 Result:')
-for(let onePokemon of game.party){
-  console.log(`- ${onePokemon.name}`)
-}
+pokemonNames()
 
 /*
 Exercise 8
@@ -292,9 +285,12 @@ Solve Exercise 8 here:
 //object > array > object
 
 console.log('Exercise 8 Result:')
-for(let onePokemon of game.party){
-  console.log(`- ${onePokemon.name}`)
+function pokemonNames(){
+  for(let onePokemon of game.party){
+    console.log(`- ${onePokemon.name}`)
+  }
 }
+pokemonNames()
 
 
 /*
@@ -332,9 +328,7 @@ game.catchPokemon = function(pokemonObj){
 game.catchPokemon(pokemon[20])
 
 console.log('Exercise 10 Result:')
-for(let onePokemon of game.party){
-  console.log(`- ${onePokemon.name}`)
-}
+pokemonNames()
 
 
 /*
